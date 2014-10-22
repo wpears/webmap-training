@@ -1,0 +1,25 @@
+What's a web app
+  -interactive program in browser
+
+How do browsers work?
+  -overview
+  -Intro to Dev Tools (make dev tools a prereq)
+  -view source
+  -change css in elements pane
+  -run JS in the console
+
+Web pages are living programs that can change and be changed at any time.. when this interactivity is the main focus, they are recognized as applications.
+
+How does mapping fit in
+
+
+
+
+
+
+SERVER WORK
+
+
+TEMPLATE EDITING
+
+BRING YOUR OWN DATA
