@@ -1,0 +1,1 @@
+Resources for the soon-to-be-held DWR web map training.
