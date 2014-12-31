@@ -58,10 +58,39 @@ How does mapping fit in
 esri JS API and ArcGIS Server API
   - JS API is a bunch of JS files that knows how to write geo into SVG, pan a map, etc.
   - server API is the way to interface with the ArcGIS Server program
+  - Operations! Identify, query
+  - ArcGIS Server itself is populated with data from services published via ArcMap/Catalog
+  - Services exist as processes running on the server.. when the server gets a request for a service
+    It passes control to this process which queries the underlying data and produces the desired output
+    (PNG for dynamicMapServer, JSON for a query, etc.)
 
 
 SERVER WORK
+---Prepare data folders for everyone---
 
+Make staging server connection
+Publish simple boundaries
+  -Step by step
+  -File share as service
+  -choose the proper output folder
+  -Analyze and fix strong warnings/errors
+   
+Check out the service at the rest endpoint
+Work with service manager to edit service
+  -Change your max requested features from 1000 to 5000
+
+Talk about service design.. do as much processing as you need to beforehand (project!)
+Keep things relatively simple
+
+Another exercise:
+Show you that publishing services isn't really hard. When you run into issues, usually there are proscribed solutions.
+Publish three services
+  -Depth
+  -Elevation
+  -Change
+  -Fix associated errors in the services
+
+  
 -- Lunnnnch --
 
 HTML
