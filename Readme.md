@@ -2,7 +2,7 @@
   Get everyone to log in and visit https://darcgis.water.ca.gov/manager
 
 #BACKGROUND
-How do browsers work? 
+##How do browsers work? 
   -A browser is a program on your computer that makes requests to other computers on the web for files, parses their responses, and displays the information
   -Content is identified by URLs
   -DNS resolution finds the appropriate computer (say, google's web server) and asks it for a file
@@ -10,13 +10,23 @@ How do browsers work?
     -Dev Tools example
       -GET.. headers, etc.
       -status code, response data, response headers
-
-
+  -Hypertext? HTML! HyperText Markup Language
+    -HTML is a way to structure information
+      -what makes it hypertext is the *links* to other documents
+      -Following a link results in another HTTP request, DNS resolution, etc.
+    -Originally, this is all the WWW was: a way to request information, display documents, and follow embedded links   
+    -Now we have google maps 
   
-What's a web app
-  -interactive program in browser
-  -page vs. app
-  -Web pages are living programs that can change and be changed at any time.. when this interactivity is the main focus, they are recognized as applications.
+##What's a web app and how do they work?
+  -An app is an interactive program in browser
+  -How are apps different from sites? 
+  -Apps are living programs that can change and be changed at any time.. interactivity is the main focus
+    -Compare with a document with links that doesn't change from the time you load it
+  -What changed in browsers from their inception to allow the creation of apps?
+  -JS! 
+  -AJAX via XMLHttpRequest
+
+  -page vs. app Example
   -wikipedia vs twitter/facebook
     -wiki: text and images, mostly static, content essentially complete upon load
     -twitter: constantly updated with new information; contents change over time or via interaction.
