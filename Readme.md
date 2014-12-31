@@ -93,22 +93,20 @@ Publish three services
   
 -- Lunnnnch --
 
-HTML
+TEMPLATE EDITING
+  -main focus of the rest of the day.
 
-CSS
-
-JS
-  -borrow/build on eloquent JS
-
-DOM
-
+Drop in simple service to see how it works.
+  - Discuss modules
+    -Interactive example with tricky piece of code with shadowing / reassigning trouble
+  - Change titles/downloads
+  - See how legends/downloads work 
 ArcGIS Javascript API
 
 Libraries!~
   -dojo
   -jquery
 
-TEMPLATE EDITING
 
 End of Day 1~
 
