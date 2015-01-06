@@ -24,7 +24,28 @@
     -Compare with a document with links that doesn't change from the time you load it
   -What changed in browsers from their inception to allow the creation of apps?
   -JS! 
+    -browsers have a javascript interpreter/engine that allows scripts to be run on any page
+      -So what?
+  -The DOM!
+    -When HTML elements are parsed, they get added to the Document Object Model
+    -The DOM is a tree of nodes, with methods for accessing siblings, children, parents, and querying for specific nodes
+
+    
+       
   -AJAX via XMLHttpRequest
+  -HTML5
+    -Audio/Video
+    -Canvas
+    -Geolocation
+    -Drag-and-Drop
+    -Offline apps
+    -Web sockets
+    -WebGL!
+    -etc!
+
+    These are available as extensions of the DOM or as new HTML elements. 
+    
+  
 
   -page vs. app Example
   -wikipedia vs twitter/facebook
@@ -38,7 +59,6 @@
   -view source
   -change css in elements pane
   -run JS in the console
-  -Talk about the DOM!
 
   Make them do some of this with an example... maybe water.ca.gov
 
