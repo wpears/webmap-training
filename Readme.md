@@ -29,10 +29,53 @@
   -The DOM!
     -When HTML elements are parsed, they get added to the Document Object Model
     -The DOM is a tree of nodes, with methods for accessing siblings, children, parents, and querying for specific nodes
+      -Whiteboard example of tree of nodes
+      -Walkthrough of the nodes of a page
+    -Javascript has a global object where various methods are provided and where global functions and variables are stored.
+    -In the browser this object is called window, and provides access to the DOM, including the root node document
+    -With access to the DOM from Javascript, one can make interactive pages 
+
+  -page vs. app
+  -wikipedia vs twitter/facebook
+    -wiki: text and images, mostly static, content essentially complete upon load
+    -twitter: constantly updated with new information; contents change over time or via interaction.
+
+  Example:
+
+  Go to a wikipedia page, open the console with f12, and enter the following code:
+  var node = document.body;
+
+  function fader(){
+    var opacity = +node.style.opacity || 1.01;
+    node.style.opacity = opacity - 0.01;
+  }
+
+
+  var fadingWiki = setInterval(fader,50)
+
+  Return to normal with:
+  clearInterval(fadingWiki);
+  node.style.opacity = 1;
+
+  We used a direct reference to the body node on the document object, but instead we could have traversed the DOM.
+
+  In the console type document.children. What do you get?
+
+  Next type document.children[0].children. What do you get?
+
+  Type document.body === document.children[0].children[1]
+
+  We're referring to the same element!
+
+  Open the elements pane and 
+
+  Traversing the DOM like this can be tedious and computationally expensive. Instead we can find what we are looking for with document.querySelector (for one element)
+
 
     
        
-  -AJAX via XMLHttpRequest
+  -AJAX
+    -XMLHttpRequest
   -HTML5
     -Audio/Video
     -Canvas
@@ -47,10 +90,7 @@
     
   
 
-  -page vs. app Example
-  -wikipedia vs twitter/facebook
-    -wiki: text and images, mostly static, content essentially complete upon load
-    -twitter: constantly updated with new information; contents change over time or via interaction.
+
    
 
   -Intro to Dev Tools 
@@ -84,6 +124,7 @@ esri JS API and ArcGIS Server API
     It passes control to this process which queries the underlying data and produces the desired output
     (PNG for dynamicMapServer, JSON for a query, etc.)
 
+OUR ARCHITECTURE
 
 SERVER WORK
 ---Prepare data folders for everyone---
