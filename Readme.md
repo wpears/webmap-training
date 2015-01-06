@@ -31,8 +31,9 @@
     -The DOM is a tree of nodes, with methods for accessing siblings, children, parents, and querying for specific nodes
       -Whiteboard example of tree of nodes
       -Walkthrough of the nodes of a page
+      -Show the different functions/properties avaiale on window/document/elements
     -Javascript has a global object where various methods are provided and where global functions and variables are stored.
-    -In the browser this object is called window, and provides access to the DOM, including the root node document
+    -In the browser this object is called window, and provides access to the DOM, including the root node document which gives us access to the root html element.
     -With access to the DOM from Javascript, one can make interactive pages 
 
   -page vs. app
@@ -46,12 +47,13 @@
   var node = document.body;
 
   function fader(){
-    var opacity = +node.style.opacity || 1.01;
+    var opacity = parseFloat(node.style.opacity) || 1.01;
     node.style.opacity = opacity - 0.01;
   }
 
-
   var fadingWiki = setInterval(fader,50)
+
+  What's happening? What is the result of parseFloat(0) || 1.01? Why?
 
   Return to normal with:
   clearInterval(fadingWiki);
@@ -67,9 +69,18 @@
 
   We're referring to the same element!
 
-  Open the elements pane and 
+  Open the elements pane and locate the body element and click on it. In Chrome Developer Tools, typing $0 in the console is a shortcut for the currently selected element.
 
-  Traversing the DOM like this can be tedious and computationally expensive. Instead we can find what we are looking for with document.querySelector (for one element)
+  In the console, after selecting the body element in the elements pane type:
+
+  document.body === $0
+
+  Go back to the elements pane and locate the node for the first paragraph of the article. use the fact that hovering over nodes highlights their location on the page. Click the node once you've found it and in the console type:
+
+  var firstParagraph = $0;
+
+
+  Traversing the DOM like this can be tedious and computationally expensive. Instead we can find what we are looking for with document.querySelector (for one element) or document.querySelectorAll for multiple elements.
 
 
     
