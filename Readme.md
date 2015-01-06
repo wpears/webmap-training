@@ -41,46 +41,9 @@
     -wiki: text and images, mostly static, content essentially complete upon load
     -twitter: constantly updated with new information; contents change over time or via interaction.
 
-  Example:
-
-  Go to a wikipedia page, open the console with f12, and enter the following code:
-  var node = document.body;
-
-  function fader(){
-    var opacity = parseFloat(node.style.opacity) || 1.01;
-    node.style.opacity = opacity - 0.01;
-  }
-
-  var fadingWiki = setInterval(fader,50)
-
-  What's happening? What is the result of parseFloat(0) || 1.01? Why?
-
-  Return to normal with:
-  clearInterval(fadingWiki);
-  node.style.opacity = 1;
-
-  We used a direct reference to the body node on the document object, but instead we could have traversed the DOM.
-
-  In the console type document.children. What do you get?
-
-  Next type document.children[0].children. What do you get?
-
-  Type document.body === document.children[0].children[1]
-
-  We're referring to the same element!
-
-  Open the elements pane and locate the body element and click on it. In Chrome Developer Tools, typing $0 in the console is a shortcut for the currently selected element.
-
-  In the console, after selecting the body element in the elements pane type:
-
-  document.body === $0
-
-  Go back to the elements pane and locate the node for the first paragraph of the article. use the fact that hovering over nodes highlights their location on the page. Click the node once you've found it and in the console type:
-
-  var firstParagraph = $0;
+  Example: DOM Exercise
 
 
-  Traversing the DOM like this can be tedious and computationally expensive. Instead we can find what we are looking for with document.querySelector (for one element) or document.querySelectorAll for multiple elements.
 
 
     
