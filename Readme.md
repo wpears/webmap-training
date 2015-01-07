@@ -104,19 +104,35 @@ How does mapping fit in
     --Image tiles as basemap
     --SVG drawn from geometries
     --Images rendered dynamically and sent over the wire
-  - How does this fit in with our understanding of client-side and server side? 
 
 ArcGIS Server API
   -http://resources.arcgis.com/en/help/rest/apiref/ --> Getting started
-
-esri JS API and 
-  - JS API is a bunch of JS files that knows how to write geo into SVG, pan a map, etc.
-  - server API is the way to interface with the ArcGIS Server program
+  - The way you interface with the ArcGIS Server program.. but complex
   - Operations! Identify, query
-  - ArcGIS Server itself is populated with data from services published via ArcMap/Catalog
-  - Services exist as processes running on the server.. when the server gets a request for a service
-    It passes control to this process which queries the underlying data and produces the desired output
-    (PNG for dynamicMapServer, JSON for a query, etc.)
+  - Data are identified by parameters
+
+Esri JS API
+  - https://developers.arcgis.com/javascript/jshelp/
+  - JS API is a bunch of JS files that knows how to write geo information into SVG, pan a map, etc.
+  - Pre-built widgets
+  - Tutorials
+  - Layer of Javascript between you and the Server API so you don't have to manually construct queries/work with raw data.
+  - Built on top of Dojo, a JS library
+
+You should use libraries.
+  -Abstract browser differences.
+    -Browsers don't all get the DOM right... old versions will always be wrong
+    -Provide solutions for easier AJAX, DOM manipulation, and provide prebuilt UI elements
+  -jQuery is incredibly popular, but you already have Dojo as a part of the JS API, so you might as well use it
+
+
+ArcGIS Server itself is populated with data from services published via ArcMap/Catalog, which become the resources you access through the API
+  Services exist as processes running on the server.. when the server gets a request for a service
+  It passes control to this process which queries the underlying data and produces the desired output
+  (PNG for dynamicMapServer, JSON for a query, etc.)
+
+So let's talk publishing.
+
 
 OUR ARCHITECTURE
 
