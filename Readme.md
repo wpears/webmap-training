@@ -134,10 +134,19 @@ ArcGIS Server itself is populated with data from services published via ArcMap/C
 So let's talk publishing.
 
 
+-- Lunnnnch? --
+
+
 OUR ARCHITECTURE
+  -The pdf!
+
+Staging (the open access one):
+\\nasgisnp\EntGIS\cadre
+\\mrsbmapp21161\giswebapps\
+https://darcgis.water.ca.gov
 
 SERVER WORK
----Prepare data folders for everyone---
+Prepare data folders 
 
 Make staging server connection
 Publish simple boundaries
@@ -149,20 +158,18 @@ Publish simple boundaries
   -Publish slow version (see brownbag)
  
 Check out the service at the rest endpoint
+
 Work with service manager to edit service
   -Change your max requested features from 1000 to 2000
 
-Talk about service design.. do as much processing as you need to beforehand (project!)
-Keep things relatively simple
+Talk about service design
+  -do as much processing as you need to beforehand (project!)
+  -Keep things relatively simple
 
-  
--- Lunnnnch --
 
 TEMPLATE EDITING
-  -main focus of the rest of the day.
 
-
-Drop in simple service to see how it works.
+  Drop in simple service to see how it works.
   - Walkthrough
     - Discuss modules
       - shadowing / reassigning trouble
@@ -174,19 +181,15 @@ Drop in simple service to see how it works.
 
 
 Another server exercise:
-Show you that publishing services isn't really hard. When you run into issues, usually there are proscribed solutions.
+Show that publishing services isn't really hard. When you run into issues, usually there are proscribed solutions.
+
 Publish three services
   -Depth
   -Elevation
   -Change
   -Fix associated errors in the services
 
-ArcGIS Javascript API
-
-Libraries!~
-  -dojo
-  -jquery
-
+Show how twopane can be used for complex usecases simply
 
 End of Day 1~
 
@@ -196,8 +199,3 @@ BRING YOUR OWN DATA
 
 Make an app and soar.
   - Fairly free-form
-
--- Cadre Input --
-Prereqs are taking quite a while. Might need to push back date
-
-Two days of training would be best. One for learning, one for building one's own project
