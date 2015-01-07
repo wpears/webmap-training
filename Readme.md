@@ -127,8 +127,8 @@ You should use libraries.
 
 
 ArcGIS Server itself is populated with data from services published via ArcMap/Catalog, which become the resources you access through the API
-  Services exist as processes running on the server.. when the server gets a request for a service
-  It passes control to this process which queries the underlying data and produces the desired output
+  - Services exist as processes running on the server.. when the server gets a request for a service
+  - It passes control to this process which queries the underlying data and produces the desired output
   (PNG for dynamicMapServer, JSON for a query, etc.)
 
 So let's talk publishing.
