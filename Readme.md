@@ -41,15 +41,26 @@
     -wiki: text and images, mostly static, content essentially complete upon load
     -twitter: constantly updated with new information; contents change over time or via interaction.
 
+  -Intro to Dev Tools/ Finding your way around the page
+    -View source
+    -change css in elements pane
+    -run JS in the console
+
+
   Example: DOM Exercise
 
-
-
+  If you are having trouble or finish early, check out:
+    https://developer.chrome.com/devtools/docs/dom-and-styles
 
     
        
   -AJAX
+    -We need data from other places
     -XMLHttpRequest
+    -From JS, make requests to other URLs and get responses.
+    -Add new content anytime or change what is displayed based on remote info
+    -Web 2.0
+
   -HTML5
     -Audio/Video
     -Canvas
@@ -60,26 +71,32 @@
     -WebGL!
     -etc!
 
-    These are available as extensions of the DOM or as new HTML elements. 
-    
-  
+    These are available as extensions of the DOM or as new HTML elements.
 
+  The web is now an application platform
+    -google maps
 
-   
-
-  -Intro to Dev Tools 
-
-  -do some live examples / live code in some interactivity in a site to show how the web is no longer a document viewer... it's an application platform
-  -view source
-  -change css in elements pane
-  -run JS in the console
-
-  Make them do some of this with an example... maybe water.ca.gov
+But before the nitty-gritty...
 
 Where do sites come from?
-  - Servers!
+  - Old talk
+
+Servers are computers that are meant to share files and data.
+  - On the server machine a program is running that is waiting for connections and knows how to handle them
+  - For web apps, this is a web server, commonly listening for http requests
+    - Data is actually sent via TCP which involves a connection to an IP at a given port number (80 for the web).
+    - The bytes that make up the HTTP request are sent via TCP to the server on the appropriate port
+    - The web server translates the data received over TCP into an HTTP request and responds accordingly
+
   - Internet Architecture lite
-  - REST
+    -http://www.escotal.com/Images/Network%20parts/osi.gif
+  - REST... HTTP as the preferred way to connect systems.
+    -Instead of complex and ad hoc request methods, use standard verbs.
+    -Allow resources and actions to be identified via URL
+    -Don't entangle client-server state
+
+    -Don't need knowledge of the server application internals or specialized client programs to interact with the server
+    -...With REST our browser which speaks HTTP can easily interact with the server program
  
 How does mapping fit in
   - delta bathymetry catalog
@@ -89,7 +106,10 @@ How does mapping fit in
     --Images rendered dynamically and sent over the wire
   - How does this fit in with our understanding of client-side and server side? 
 
-esri JS API and ArcGIS Server API
+ArcGIS Server API
+  -http://resources.arcgis.com/en/help/rest/apiref/ --> Getting started
+
+esri JS API and 
   - JS API is a bunch of JS files that knows how to write geo into SVG, pan a map, etc.
   - server API is the way to interface with the ArcGIS Server program
   - Operations! Identify, query
@@ -108,22 +128,16 @@ Publish simple boundaries
   -Step by step
   -File share as service
   -choose the proper output folder
-  -Analyze and fix strong warnings/errors
-   
+  -Analyze and note warnings/errors
+  -http://help.arcgis.com/en/arcgisdesktop/10.0/help/003r/pdf/geographic_transformations.pdf
+  -Publish slow version (see brownbag)
+ 
 Check out the service at the rest endpoint
 Work with service manager to edit service
-  -Change your max requested features from 1000 to 5000
+  -Change your max requested features from 1000 to 2000
 
 Talk about service design.. do as much processing as you need to beforehand (project!)
 Keep things relatively simple
-
-Another exercise:
-Show you that publishing services isn't really hard. When you run into issues, usually there are proscribed solutions.
-Publish three services
-  -Depth
-  -Elevation
-  -Change
-  -Fix associated errors in the services
 
   
 -- Lunnnnch --
@@ -131,11 +145,26 @@ Publish three services
 TEMPLATE EDITING
   -main focus of the rest of the day.
 
+
 Drop in simple service to see how it works.
-  - Discuss modules
-    -Interactive example with tricky piece of code with shadowing / reassigning trouble
+  - Walkthrough
+    - Discuss modules
+      - shadowing / reassigning trouble
+      - separate concerns
+      - maintainability
+      - Extensibility
   - Change titles/downloads
-  - See how legends/downloads work 
+  - See how legends/downloads work
+
+
+Another server exercise:
+Show you that publishing services isn't really hard. When you run into issues, usually there are proscribed solutions.
+Publish three services
+  -Depth
+  -Elevation
+  -Change
+  -Fix associated errors in the services
+
 ArcGIS Javascript API
 
 Libraries!~
