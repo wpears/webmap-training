@@ -50,7 +50,7 @@
   ##Example: DOM Exercise
 
   If you are having trouble or finish early, check out:
-    https://developer.chrome.com/devtools/docs/dom- and- styles
+    https://developer.chrome.com/devtools/docs/dom-and-styles
 
     
        
@@ -141,9 +141,9 @@ So let's talk publishing.
   - The pdf!
 
 Staging (the open access one):
-\\nasgisnp\EntGIS\cadre
-\\mrsbmapp21161\giswebapps\
-https://darcgis.water.ca.gov
+  - \\\\nasgisnp\EntGIS\cadre
+  - \\\\mrsbmapp21161\giswebapps\
+  - https://darcgis.water.ca.gov
 
 #SERVER WORK
 Prepare data folders 
