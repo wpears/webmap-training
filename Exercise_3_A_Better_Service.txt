@@ -1,0 +1,6 @@
+Overwrite your old boundaries service with a new one - with the warnings fixed.
+
+If you need help looking up geographic transformations, consult
+http://help.arcgis.com/en/arcgisdesktop/10.0/help/003r/pdf/geographic_transformations.pdf
+
+Play around with your new service in your template. Does it feel better?

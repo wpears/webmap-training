@@ -154,9 +154,9 @@ Publish simple boundaries
   - File share as service
   - choose the proper output folder
   - Analyze and note warnings/errors
-  - http://help.arcgis.com/en/arcgisdesktop/10.0/help/003r/pdf/geographic_transformations.pdf
-  - Publish slow version (see brownbag)
- 
+
+##Example 2 - A (slow) service
+
 Check out the service at the rest endpoint
 
 Work with service manager to edit service
@@ -168,17 +168,19 @@ Talk about service design
 
 
 #TEMPLATE EDITING
-
-  Drop in simple service to see how it works.
+  - Everyone get a copy of the template: \\\\mrsbmapp21161\giswebapps\training\yourName
+  - Drop in simple service to see how it works.
   - Walkthrough
     - Discuss modules
       - shadowing / reassigning trouble
       - separate concerns
       - maintainability
       - Extensibility
+    - Module Example
   - Change titles/downloads
   - See how legends/downloads work
 
+##Example 3 - A faster service
 
 Another server exercise:
 Show that publishing services isn't really hard. When you run into issues, usually there are proscribed solutions.

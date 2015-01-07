@@ -1,0 +1,12 @@
+ Publish the Boundaries map as a service.
+
+ The output folder should be "cadre".
+
+ Name the service yourName_boundaries.
+
+ Don't fix any of the warnings. We're publishing a slow map service on purpose.
+
+ Consult 
+ http://resources.arcgis.com/en/help/main/10.2/index.html#/Publishing_a_map_service/00sq00000089000000/
+ and
+ http://resources.arcgis.com/en/help/main/10.2/index.html#/Setting_map_service_properties/00sq0000009r000000/ for more information on the publishing workflow and what the properties do.
