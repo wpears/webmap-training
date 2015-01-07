@@ -146,8 +146,9 @@ Staging (the open access one):
   - https://darcgis.water.ca.gov
 
 #SERVER WORK
-Prepare data folders 
+Prepare data folders: \\\\nasgisnp\Entgis\cadre\training\yourName
 
+Open the enclosed map document
 Make staging server connection
 Publish simple boundaries
   - Step by step
